@@ -2,6 +2,7 @@ const display = document.querySelector(".display");
 const keys = document.querySelector(".keys");
 var firstNum = null;
 var operator = null;
+var decimal = false;
 
 keys.addEventListener("click", (e) => {
     if (e.target.matches("button")) {
@@ -17,6 +18,13 @@ keys.addEventListener("click", (e) => {
                 display.textContent += keyContent;
             }
         }
+
+        if (!decimal && action === "decimal") {
+            display.textContent += ".";
+            decimal = true;
+        }
+
+
 
         if (action === "sum" || action === "difference" || action === "product" || action === "quotient") {
             firstNum = displayedNum; // Update to consistent naming convention
@@ -35,6 +43,7 @@ keys.addEventListener("click", (e) => {
             display.textContent = "0";
             operator = null;
             firstNum = null;
+            decimal = false;
         }
     }
 });
