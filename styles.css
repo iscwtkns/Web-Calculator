@@ -1,0 +1,38 @@
+.display {
+    background-color: #7c7ce2;
+    text-align: right;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 20px;
+    border: black solid 3px;
+    font-size: xxx-large;
+}
+
+.keys {
+    background-color: black;
+    margin-left: 500px;
+    margin-right: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: black solid 3px;
+    border-top: none;
+}
+
+button {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    border: black solid 1px;
+    font-size: x-large;
+}
+
+.equals {
+    grid-row: span 4;
+    background-color: #c72d2d;
+    font-size: xxx-large;
+}
+
+.operator {
+    font-size: xx-large;
+    background-color: gray;
+}
