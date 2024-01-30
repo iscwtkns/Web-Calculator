@@ -1,8 +1,8 @@
 const display = document.querySelector(".display");
 const keys = document.querySelector(".keys");
-var firstNum = null;
-var operator = null;
-var decimal = false;
+let firstNum = null;
+let operator = null;
+let decimal = false;
 
 keys.addEventListener("click", (e) => {
     if (e.target.matches("button")) {
